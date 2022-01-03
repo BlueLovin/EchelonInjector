@@ -29,11 +29,8 @@ int RenderTextOverGame()
 
 	HFONT font = CreateFont(30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, L"Sans Serif");
 
-	while (true)
+	while (game.isAlive())
 	{
-		if (!game.isAlive()) {
-			break;
-		}
 		// update player speed
 		player.UpdateVelocity();
 		float speed = player.GetSpeed();
