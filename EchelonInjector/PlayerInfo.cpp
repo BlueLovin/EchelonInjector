@@ -9,15 +9,15 @@ void PlayerInfo::UpdateVelocity()
 
 float PlayerInfo::GetSpeed()
 {
-	// thank u nambona! :-) | pythagorean theorem 
+	// thank u nambona! :-) | pythagorean theorem
 	return sqrt((xVelocity * xVelocity) + (yVelocity * yVelocity));
 }
 
 void PlayerInfo::InitializePointers()
 {
 	// resolving pointer offsets
-	xVelocityBaseAddress = game.echelonDLLBaseAddress + 0x000c59bc;
-	xVelocityOffsets = { 0x80, 0x70, 0x2d0, 0x0, 0x34, 0x42c, 0xec };
+	xVelocityBaseAddress = game.DareAudioDLLBaseAddress + 0x0000cbdc;
+	xVelocityOffsets = { 0xec };
 	xVelocityAddress = Processes::FindDMAAddy(game.processHandle, xVelocityBaseAddress, xVelocityOffsets);
 
 	yVelocityBaseAddress = game.echelonDLLBaseAddress + 0x000c0d98;
