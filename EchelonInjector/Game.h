@@ -8,6 +8,7 @@ public:
 	BOOL isAlive();
 	uintptr_t echelonDLLBaseAddress;
 	uintptr_t WinDrvDLLBaseAddress;
+	uintptr_t DareAudioDLLBaseAddress;
 	HANDLE processHandle;
 	std::string GetMapName();
 	Game();
