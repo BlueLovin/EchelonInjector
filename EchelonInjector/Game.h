@@ -6,7 +6,6 @@ class Game {
 public:
 	DWORD processId = Processes::GetProcId(L"splintercell.exe");
 	BOOL isAlive();
-	uintptr_t echelonDLLBaseAddress;
 	uintptr_t WinDrvDLLBaseAddress;
 	uintptr_t DareAudioDLLBaseAddress;
 	HANDLE processHandle;

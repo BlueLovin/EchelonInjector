@@ -20,8 +20,8 @@ void PlayerInfo::InitializePointers()
 	xVelocityOffsets = { 0xec };
 	xVelocityAddress = Processes::FindDMAAddy(game.processHandle, xVelocityBaseAddress, xVelocityOffsets);
 
-	yVelocityBaseAddress = game.echelonDLLBaseAddress + 0x000c0d98;
-	yVelocityOffsets = { 0x180, 0x19c, 0x68, 0x88, 0x34, 0x2a8, 0xf0 };
+	yVelocityBaseAddress = game.DareAudioDLLBaseAddress + 0x0000cbdc;
+	yVelocityOffsets = { 0xf0 };
 	yVelocityAddress = Processes::FindDMAAddy(game.processHandle, yVelocityBaseAddress, yVelocityOffsets);
 }
 

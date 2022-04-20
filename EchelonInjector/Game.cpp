@@ -23,7 +23,6 @@ Game::Game()
 	WinDrvDLLBaseAddress = Processes::GetModuleBaseAddress(processId, L"WinDrv.dll");
 	soundDLLBaseAddress = Processes::GetModuleBaseAddress(processId, L"SNDDSound3DDLL_VBR.dll");
 	DareAudioDLLBaseAddress = Processes::GetModuleBaseAddress(processId, L"DareAudio.dll");
-	echelonDLLBaseAddress = Processes::GetModuleBaseAddress(processId, L"Echelon.dll");
 
 	mapNameAddress = soundDLLBaseAddress + 0x6146c;
 }
